@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<!--v-bind é uma única direção. Do java script para o html-->
+<!--v-on pega um evento que aconteceu no template(html). -->
+<!--v-model pode fazer nos dois sentido. tanto no html atualiza os dados no JS, como aquilo que foi atualizado no vue gera impacto no html  -->
+
+<div id="app">
+    <p>{{titulo}}</p>
+    <input type="text" v-model="titulo">
+</div>
+<script>
+    new Vue({
+
+        el: '#app',
+        data: {
+            titulo: 'Usando VS'
+        }
+
+    })
+
+</script>

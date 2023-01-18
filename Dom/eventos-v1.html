@@ -1,0 +1,23 @@
+<script src="https://unpkg.com/vue@2"></script>
+
+<div id="app">
+    <p>{{Contador}}</p>
+   <!--V-on verifica os eventos -->
+    <button v-on:click="Somar">Soma 1</button>
+</div>
+<script>
+    new Vue({
+
+        el: '#app',
+        data: {
+            Contador: 0
+        },
+        methods: {
+            Somar(){
+                this.Contador +=10
+            }
+        }
+
+    })
+
+</script>
